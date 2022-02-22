@@ -98,4 +98,4 @@ if davlat in davlatlar:
   else:
     print(f"{davlat.title()}-ning poytaxti {v.title()}.")
 else:
-  print("Bu davlat haqida ma'lumot hozircha yo'q.")
+  print("Bu davlat haqida ma'lumot hozircha yo'q!")
