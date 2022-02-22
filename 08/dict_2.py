@@ -92,10 +92,10 @@ for k, v in sorted(davlatlar.items()):
 
 davlat = input("Qaysi davlat poytaxtini bilishni hohlaysiz?\n").lower()
 # for k, v in davlatlar.items():
-  if davlat in davlatlar.keys():
-    if davlat == 'usa':
-      print(f"{davlat.upper()}-ning poytaxti {v.title()}.")
-    else:
-      print(f"{davlat.title()}-ning poytaxti {v.title()}.")
+if davlat in davlatlar:
+  if davlat.keys() == 'usa':
+    print(f"{davlat.upper()}-ning poytaxti {davlat.title()}.")
   else:
-    print("Bu davlat haqida ma'lumot hozircha yo'q.")
+    print(f"{davlat.title()}-ning poytaxti {v.title()}.")
+else:
+  print("Bu davlat haqida ma'lumot hozircha yo'q.")
