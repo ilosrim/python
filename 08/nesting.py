@@ -57,3 +57,5 @@ for malibu in malibus:
   else:
     malibu['narh'] = 35000
 print(malibus)
+
+print(malibu['rang'])
