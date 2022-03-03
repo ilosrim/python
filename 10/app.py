@@ -9,3 +9,4 @@ def salom_ber(ism, familiya):
 
 salom_ber(ism, familiya)
 print(salom_ber.__doc__)
+
