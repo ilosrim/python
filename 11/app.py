@@ -29,6 +29,7 @@ avto2 = avto_info('GM', 'Malibu', 'Qora', 'Avtomat', 2010, 30000)
 
 avtolar = [avto1, avto2]
 
+print("Avtolar ro'yxati:")
 for avto in avtolar:
   if avto['narhi']:
     narh = avto['narhi']
