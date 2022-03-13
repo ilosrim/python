@@ -29,3 +29,4 @@ print(talaba2.get_age(h_yil))
 
 print(talaba3.tanishtir())
 print(talaba3.get_age(h_yil))
+
