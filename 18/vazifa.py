@@ -57,3 +57,6 @@ print(dir(Avto))
 print(dir(Avtosalon))
 print(see_methods(Avto))
 print(see_methods(Avtosalon))
+
+print(avto1.__dict__.keys())
+print(avto1.__dict__.values())
