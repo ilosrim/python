@@ -16,9 +16,6 @@ class Shaxs:
     """Shaxsning yoshini qaytaruvchi metod"""
     return yil - self.tyil
 
-# inson = Shaxs("Mirsoli", "Mirsultonov", "FB2654123", 1998)
-# print(f"{inson.get_info()}. {inson.get_age(2022)} yosh.")
-
 class Talaba(Shaxs):
   """Talaba klassi"""
   def __init__(self, ism, familiya, passport, tyil, id_raqam, manzil):
@@ -44,16 +41,15 @@ class Talaba(Shaxs):
     return info
 
   def fanga_yozil(self, fan):
-    self.fanlar.append(fan)
+    return self.fanlar.append(fan)
+
+  def get_fan(self):
+    return [fan.get_info() for fan in self.fanlar]
 
   def remove_fan(self):
-    pass
+    for n in self.fanlar:
+      return [n]
 
-
-
-# talaba = Talaba("Hasan", "Husanov", "BC5969821", 2000, 999999999)
-# print(f"{talaba.get_info()}, ID raqami: {talaba.get_id_raqam()}")
-# print(talaba.get_info())
 
 class Manzil:
   def __init__(self, uy, kocha, tuman, viloyat):
@@ -81,3 +77,5 @@ kimyo = Fan("Kimyo")
 matematika = Fan("Matematika")
 talaba2.fanga_yozil(kimyo)
 print(talaba2.fanlar)
+print(talaba2.remove_fan())
+print(talaba2.get_fan())
